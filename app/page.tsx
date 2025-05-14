@@ -55,7 +55,7 @@ export default function Home() {
           /> */}
         </div>
         {/* add z-10 if need to add a background image */}
-        <div className="container mx-auto px-4 relative">
+        <div className="container mx-auto px-4 relative pt-40">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="font-serif text-4xl md:text-6xl font-bold text-[#1a1a1a] mb-6">Soul of Music. <br /> Echoes of Culture. </h1>
             <p className="text-lg md:text-xl text-[#4a4a4a] mb-8 leading-relaxed">
@@ -88,7 +88,14 @@ export default function Home() {
               <div className="mb-4">
                 <span className="inline-block bg-[var(--brandOne)] text-white text-sm px-3 py-1 rounded">Upcoming</span>
               </div>
-              <h3 className="font-serif text-xl font-medium mb-2 text-black">Classical Symphony Night</h3>
+              <h3 className="font-serif text-xl font-medium mb-2 text-black">Jugalbandi</h3>
+              <Image
+                src="/u1.jpg"
+                alt="Education initiative"
+                width={400}
+                height={300}
+                className="rounded-lg mb-4"
+              />
               <p className="text-[#4a4a4a] mb-4">
                 An evening of enchanting classical music featuring renowned artists.
               </p>
@@ -186,7 +193,7 @@ export default function Home() {
                 To connect passionate audiences with the soul-stirring power of classical music, while offering artists
                 a platform to express and grow. We aim to inspire, educate, and leave a lasting cultural impact.
               </p>
-              <Button className="bg-[var(--brandTwo)] hover:bg-[#6b0000] hover:text-white">Learn More About Our Mission</Button>
+              <Button className="bg-[var(--brandTwo)] hover:bg-[#6b0000] hover:text-white text-black">Learn More About Our Mission</Button>
             </div>
             <div>
               <Image
