@@ -38,7 +38,7 @@ export default function Home() {
               Contact
             </Link>
           </nav>
-          <Button className=" hover:bg-[#8b0000] hover:text-white bg-[var(--brandTwo)] text-lg">
+          <Button className=" hover:bg-[#8b0000] hover:text-white bg-[var(--brandTwo)] text-lg text-black">
             Jugalbandi 2025
           </Button>
         </div>
