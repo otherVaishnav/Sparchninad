@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#f8f5f0]">
       {/* Header */}
-      <header className="border-b border-[#e0d6c8] bg-[#451612] text-white">
+      <header className="border-b border-[#e0d6c8] bg-[var(--brandOne)] text-white">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <Music className="h-6 w-6 text-[#8b0000]" />
@@ -17,55 +17,55 @@ export default function Home() {
             <Link href="#about" className="text-sm font-medium hover:text-[#8b0000] transition-colors">
               About
             </Link>
-            <Link href="#offerings" className="text-sm font-medium hover:text-[#8b0000] transition-colors">
+            <Link href="#upcoming" className="text-sm font-medium hover:text-[#8b0000] transition-colors">
               Jugalbandi 2025
             </Link>
             <Link href="#vision" className="text-sm font-medium hover:text-[#8b0000] transition-colors">
-              Our Mission
-            </Link>
-            <Link href="#social" className="text-sm font-medium hover:text-[#8b0000] transition-colors">
               Our Vision
+            </Link>
+            <Link href="#gallery" className="text-sm font-medium hover:text-[#8b0000] transition-colors">
+              Gallery
             </Link>
             <Link href="#contact" className="text-sm font-medium hover:text-[#8b0000] transition-colors">
               Contact
             </Link>
           </nav>
-          <Button variant="outline" className="border-[#8b0000] text-[#8b0000] hover:bg-[#8b0000] hover:text-white">
+          <Button className=" hover:bg-[#8b0000] hover:text-white bg-[var(--brandTwo)]">
             Jugalbandi 2025
           </Button>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="py-20 md:py-32 relative">
+      <section className="py-20 md:py-32 relative bg-[var(--brandTwo)]">
         <div className="absolute inset-0 z-0 opacity-10">
-          <Image
+          {/* <Image
             src="/placeholder.svg?height=800&width=1600&text=Indian+Classical+Instruments"
             alt="Indian classical musical instruments background"
             fill
             className="object-cover"
-          />
+          /> */}
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="font-serif text-4xl md:text-6xl font-bold text-[#1a1a1a] mb-6">Where Music Meets Meaning</h1>
+            <h1 className="font-serif text-4xl md:text-6xl font-bold text-[#1a1a1a] mb-6">Soul of Music. <br /> Echoes of Culture. </h1>
             <p className="text-lg md:text-xl text-[#4a4a4a] mb-8 leading-relaxed">
-              At SparshNinaad, we harness the transformative power of music to inspire and uplift. As a public
-              charitable trust, we curate soulful classical music experiences—from renowned performers to emerging
-              talents—while supporting meaningful social causes.
+              At SparshNinaad, we harness the transformative power of Indian classical music to inspire, uplift, and connect. As a public charitable trust,
+              we curate soulful performances—from legendary maestros to emerging talents—while supporting meaningful social causes.
+              Through music, we celebrate tradition, nurture talent, and drive positive change in the community.
             </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
+            {/* <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button className="bg-[#8b0000] hover:bg-[#6b0000] text-white">Upcoming Concerts</Button>
-              <Button variant="outline" className="border-[#8b0000] text-[#8b0000] hover:bg-[#8b0000] hover:text-white">
+              <Button className=" hover:bg-[#8b0000] hover:text-white bg-[var(--brandTwo)]">
                 Our Mission
               </Button>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
 
       {/* Upcoming Events Section */}
-      <section className="py-16 bg-[#431611] text-white">
+      <section id="upcoming" className="py-16 bg-[var(--brandOne)] text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="font-serif text-3xl font-bold mb-4">Upcoming Events</h2>
@@ -75,11 +75,11 @@ export default function Home() {
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-[#f8f5f0] p-6 rounded-lg shadow-sm border border-[#e0d6c8]">
+            <div className="bg-[var(--brandTwo)] p-6 rounded-lg shadow-sm border border-[#e0d6c8]">
               <div className="mb-4">
-                <span className="inline-block bg-[#8b0000] text-white text-sm px-3 py-1 rounded">Upcoming</span>
+                <span className="inline-block bg-[var(--brandOne)] text-white text-sm px-3 py-1 rounded">Upcoming</span>
               </div>
-              <h3 className="font-serif text-xl font-medium mb-2">Classical Symphony Night</h3>
+              <h3 className="font-serif text-xl font-medium mb-2 text-black">Classical Symphony Night</h3>
               <p className="text-[#4a4a4a] mb-4">
                 An evening of enchanting classical music featuring renowned artists.
               </p>
@@ -91,7 +91,7 @@ export default function Home() {
                 <MapPin className="h-4 w-4 mr-2" />
                 <span>Grand Concert Hall, City Center</span>
               </div>
-              <Button className="w-full bg-[#8b0000] hover:bg-[#6b0000] text-white">Book Tickets</Button>
+              <Button className="w-full bg-[var(--brandOne)] hover:bg-[#6b0000] text-white">Book Tickets</Button>
             </div>
           </div>
           {/* Can convert this to book now button */}
@@ -104,13 +104,13 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-16 bg-white">
+      <section id="about" className="py-16 bg-[var(--brandTwo)]">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="font-serif text-3xl font-bold text-[#1a1a1a] mb-4">
               Celebrating the Rich Heritage of Classical Music
             </h2>
-            <div className="w-20 h-1 bg-[#8b0000] mx-auto mb-6"></div>
+            <div className="w-20 h-1 bg-[var(--brandOne)] mx-auto mb-6"></div>
             <p className="text-[#4a4a4a] leading-relaxed">
               We celebrate the rich heritage of classical music through events that range from intimate recitals to
               grand symphonic productions, creating lasting cultural impact.
@@ -167,7 +167,7 @@ export default function Home() {
       </section>
 
       {/* Vision Section */}
-      < section id="vision" className="py-16 bg-[#431611]">
+      < section id="vision" className="py-16 bg-[var(--brandOne)]">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -177,11 +177,11 @@ export default function Home() {
                 To connect passionate audiences with the soul-stirring power of classical music, while offering artists
                 a platform to express and grow. We aim to inspire, educate, and leave a lasting cultural impact.
               </p>
-              <Button className="bg-[#8b0000] hover:bg-[#6b0000] text-white">Learn More About Our Mission</Button>
+              <Button className="bg-[var(--brandTwo)] hover:bg-[#6b0000] hover:text-white">Learn More About Our Mission</Button>
             </div>
             <div>
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/g4.jpg"
                 alt="Classical music vision"
                 width={800}
                 height={600}
@@ -248,49 +248,49 @@ export default function Home() {
 */}
 
 
-      {/* Social Commitment Section */}
-      <section id="social" className="py-16 bg-[#f8f5f0]">
+      {/* Gallery Section */}
+      <section id="gallery" className="py-16 bg-[var(--brandTwo)]">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="font-serif text-3xl font-bold text-[#1a1a1a] mb-4">Gallery</h2>
             <div className="w-20 h-1 bg-[#8b0000] mx-auto mb-6"></div>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-[#e0d6c8]">
+            <div className="bg-[#ffffff] p-6 rounded-lg shadow-sm border border-[#e0d6c8]">
               <Image
-                src="/placeholder.svg?height=300&width=400"
+                src="/g1.jpg"
                 alt="Education initiative"
                 width={400}
                 height={300}
                 className="rounded-lg mb-4"
               />
-              <h3 className="font-serif text-xl font-medium mb-2">Image title 1</h3>
+              <h3 className="font-serif text-xl font-medium mb-2 text-black">Image title 1</h3>
               <p className="text-[#4a4a4a]">
                 desc for the image one
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm border border-[#e0d6c8]">
               <Image
-                src="/placeholder.svg?height=300&width=400"
+                src="/g2.jpg"
                 alt="Healthcare support"
                 width={400}
                 height={300}
                 className="rounded-lg mb-4"
               />
-              <h3 className="font-serif text-xl font-medium mb-2">Image title 2</h3>
+              <h3 className="font-serif text-xl font-medium mb-2 text-black">Image title 2</h3>
               <p className="text-[#4a4a4a]">
                 desc for the image two
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm border border-[#e0d6c8]">
               <Image
-                src="/placeholder.svg?height=300&width=400"
+                src="/g3.jpg"
                 alt="Music education"
                 width={400}
                 height={300}
                 className="rounded-lg mb-4"
               />
-              <h3 className="font-serif text-xl font-medium mb-2">Image title 3</h3>
+              <h3 className="font-serif text-xl font-medium mb-2 text-black">Image title 3</h3>
               <p className="text-[#4a4a4a]">
                 desc for the image three
               </p>
@@ -302,7 +302,7 @@ export default function Home() {
 
 
       {/* Contact Section */}
-      <section id="contact" className="py-16 bg-[#431611]">
+      <section id="contact" className="py-16 bg-[var(--brandOne)]">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="font-serif text-3xl font-bold text-[#fff] mb-4">Get In Touch</h2>
@@ -314,8 +314,8 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 gap-12">
 
-            <div className="bg-white p-8 rounded-lg shadow-sm border border-[#e0d6c8]">
-              <h3 className="font-serif text-xl font-medium mb-4">Send Us a Message</h3>
+            <div className="bg-[var(--brandTwo)] p-8 rounded-lg shadow-sm border border-[#e0d6c8]">
+              <h3 className="font-serif text-xl font-medium mb-4 text-black">Send Us a Message</h3>
               <form className="space-y-4">
                 <div className="grid grid-cols-2 gap-4">
                   <div>
@@ -325,7 +325,7 @@ export default function Home() {
                     <input
                       type="text"
                       id="name"
-                      className="w-full px-3 py-2 border border-[#e0d6c8] rounded-md focus:outline-none focus:ring-1 focus:ring-[#8b0000]"
+                      className="w-full px-3 py-2 border border-[#000] rounded-md focus:outline-none focus:ring-1 focus:ring-[#8b0000] bg-inherit text-black"
                     />
                   </div>
                   <div>
@@ -335,7 +335,7 @@ export default function Home() {
                     <input
                       type="email"
                       id="email"
-                      className="w-full px-3 py-2 border border-[#e0d6c8] rounded-md focus:outline-none focus:ring-1 focus:ring-[#8b0000]"
+                      className="w-full px-3 py-2 border border-[#000] bg-inherit rounded-md focus:outline-none focus:ring-1 focus:ring-[#8b0000] text-black"
                     />
                   </div>
                 </div>
@@ -346,7 +346,7 @@ export default function Home() {
                   <input
                     type="text"
                     id="subject"
-                    className="w-full px-3 py-2 border border-[#e0d6c8] rounded-md focus:outline-none focus:ring-1 focus:ring-[#8b0000]"
+                    className="w-full px-3 py-2 border border-[#000] bg-inherit rounded-md focus:outline-none focus:ring-1 focus:ring-[#8b0000] text-black"
                   />
                 </div>
                 <div>
@@ -356,27 +356,27 @@ export default function Home() {
                   <textarea
                     id="message"
                     rows={4}
-                    className="w-full px-3 py-2 border border-[#e0d6c8] rounded-md focus:outline-none focus:ring-1 focus:ring-[#8b0000]"
+                    className="w-full px-3 py-2 border border-[#000] bg-inherit rounded-md focus:outline-none focus:ring-1 focus:ring-[#8b0000] text-black"
                   ></textarea>
                 </div>
-                <Button className="w-full bg-[#8b0000] hover:bg-[#6b0000] text-white">Send Message</Button>
+                <Button className="w-full bg-[var(--brandOne)] hover:bg-[#6b0000] text-white">Send Message</Button>
               </form>
             </div>
 
-            <div className="bg-white p-8 rounded-lg shadow-sm border border-[#e0d6c8] mb-8">
-              <h3 className="font-serif text-xl font-medium mb-4">Contact Information</h3>
+            <div className="bg-[var(--brandTwo)] p-8 rounded-lg shadow-sm border border-[#e0d6c8] mb-8">
+              <h3 className="font-serif text-xl font-medium mb-4 text-black">Contact Information</h3>
               <div className="space-y-4">
                 <div className="flex items-start space-x-4">
                   <MapPin className="h-5 w-5 text-[#8b0000] mt-0.5" />
                   <div>
-                    <h4 className="font-medium">Address</h4>
+                    <h4 className="font-medium text-black">Address</h4>
                     <p className="text-[#4a4a4a]">123 Music Avenue, Cultural District, City, Country</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
                   <Mail className="h-5 w-5 text-[#8b0000] mt-0.5" />
                   <div>
-                    <h4 className="font-medium">Email</h4>
+                    <h4 className="font-medium text-black">Email</h4>
                     <p className="text-[#4a4a4a]">contact@sparshninaad.org</p>
                   </div>
                 </div>
@@ -395,7 +395,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#431611] text-white py-12">
+      <footer className="bg-[var(--brandOne)] text-white py-12">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
@@ -403,7 +403,7 @@ export default function Home() {
                 <Music className="h-6 w-6 text-white" />
                 <span className="font-serif text-xl font-medium">SparshNinaad</span>
               </div>
-              <p className="text-sm text-gray-400">
+              <p className="text-sm text-[#fff]">
                 Where Music Meets Meaning. A public charitable trust dedicated to classical music and social causes.
               </p>
             </div>
@@ -411,22 +411,22 @@ export default function Home() {
               <h4 className="font-serif text-lg font-medium mb-4">Quick Links</h4>
               <ul className="space-y-2">
                 <li>
-                  <Link href="#about" className="text-sm text-gray-400 hover:text-white transition-colors">
+                  <Link href="#about" className="text-sm text-[#fff] hover:text-white transition-colors">
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link href="#social" className="text-sm text-gray-400 hover:text-white transition-colors">
+                  <Link href="#social" className="text-sm text-[#fff] hover:text-white transition-colors">
                     Jugalbandi 2025
                   </Link>
                 </li>
                 <li>
-                  <Link href="#offerings" className="text-sm text-gray-400 hover:text-white transition-colors">
+                  <Link href="#offerings" className="text-sm text-[#fff] hover:text-white transition-colors">
                     Upcoming Events
                   </Link>
                 </li>
                 <li>
-                  <Link href="#vision" className="text-sm text-gray-400 hover:text-white transition-colors">
+                  <Link href="#vision" className="text-sm text-[#fff] hover:text-white transition-colors">
                     Vision & Mission
                   </Link>
                 </li>
@@ -436,22 +436,22 @@ export default function Home() {
               <h4 className="font-serif text-lg font-medium mb-4">Socials</h4>
               <ul className="space-y-2">
                 <li>
-                  <Link href="#" className="text-sm text-gray-400 hover:text-white transition-colors">
+                  <Link href="#" className="text-sm text-[#fff] hover:text-white transition-colors">
                     Instagram
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-sm text-gray-400 hover:text-white transition-colors">
+                  <Link href="#" className="text-sm text-[#fff] hover:text-white transition-colors">
                     Facebook
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-sm text-gray-400 hover:text-white transition-colors">
+                  <Link href="#" className="text-sm text-[#fff] hover:text-white transition-colors">
                     Youtube
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-sm text-gray-400 hover:text-white transition-colors">
+                  <Link href="#" className="text-sm text-[#fff] hover:text-white transition-colors">
                     Whatsapp
                   </Link>
                 </li>
@@ -459,7 +459,7 @@ export default function Home() {
             </div>
             {/* <div>
               <h4 className="font-serif text-lg font-medium mb-4">Newsletter</h4>
-              <p className="text-sm text-gray-400 mb-4">
+              <p className="text-sm text-[#fff] mb-4">
                 Subscribe to our newsletter for updates on upcoming events and initiatives.
               </p>
               <div className="flex">
@@ -473,7 +473,7 @@ export default function Home() {
             </div> */}
           </div>
           <div className="border-t border-[#333] mt-8 pt-8 text-center">
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-[#fff]">
               &copy; {new Date().getFullYear()} SparshNinaad Foundation Public Charitable Trust. All rights reserved.
             </p>
           </div>
