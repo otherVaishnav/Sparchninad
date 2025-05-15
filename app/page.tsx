@@ -45,7 +45,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="py-20 md:py-32 relative bg-[var(--brandTwo)]">
+      <section id="about" className="py-20 md:py-32 relative bg-[var(--brandTwo)]">
         <div className="absolute inset-0 z-0 opacity-10">
           {/* <Image
             src="/placeholder.svg?height=800&width=1600&text=Indian+Classical+Instruments"
@@ -55,7 +55,7 @@ export default function Home() {
           /> */}
         </div>
         {/* add z-10 if need to add a background image */}
-        <div className="container mx-auto px-4 relative pt-40">
+        <div className="container mx-auto px-4 relative pt-20">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="font-serif text-4xl md:text-6xl font-bold text-[#1a1a1a] mb-6">Soul of Music. <br /> Echoes of Culture. </h1>
             <p className="text-lg md:text-xl text-[#4a4a4a] mb-8 leading-relaxed">
@@ -83,7 +83,8 @@ export default function Home() {
               Join us for our upcoming concerts and experience the magic of classical music.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
+            <div></div>
             <div className="bg-[var(--brandTwo)] p-6 rounded-lg shadow-sm border border-[#e0d6c8]">
               <div className="mb-4">
                 <span className="inline-block bg-[var(--brandOne)] text-white text-sm px-3 py-1 rounded">Upcoming</span>
@@ -109,6 +110,7 @@ export default function Home() {
               </div>
               <Button className="w-full bg-[var(--brandOne)] hover:bg-[#6b0000] text-white">Book Tickets</Button>
             </div>
+            <div></div>
           </div>
           {/* Can convert this to book now button */}
           {/* <div className="text-center mt-8">
@@ -120,7 +122,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-16 bg-[var(--brandTwo)]">
+      <section id="mission" className="py-16 bg-[var(--brandTwo)]">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="font-serif text-3xl font-bold text-[#1a1a1a] mb-4">
@@ -201,7 +203,7 @@ export default function Home() {
                 alt="Classical music vision"
                 width={800}
                 height={600}
-                className="rounded-lg shadow-md"
+                className="rounded-3xl shadow-xl hover:shadow-3xl"
               />
             </div>
           </div>
@@ -272,7 +274,7 @@ export default function Home() {
             <div className="w-20 h-1 bg-[#8b0000] mx-auto mb-6"></div>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-[#ffffff] p-6 rounded-lg shadow-sm border border-[#e0d6c8]">
+            <div className="bg-[#ffffff] p-6 rounded-lg shadow-sm border border-[#e0d6c8] hover:shadow-xl">
               <Image
                 src="/g2.jpg"
                 alt="Education initiative"
@@ -285,7 +287,7 @@ export default function Home() {
                 desc for the image one
               </p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-[#e0d6c8]">
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-[#e0d6c8] hover:shadow-xl">
               <Image
                 src="/g1.jpg"
                 alt="Healthcare support"
@@ -298,7 +300,7 @@ export default function Home() {
                 desc for the image two
               </p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-[#e0d6c8]">
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-[#e0d6c8] hover:shadow-xl">
               <Image
                 src="/g3.jpg"
                 alt="Music education"
@@ -416,33 +418,41 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <Music className="h-6 w-6 text-white" />
-                <span className="font-serif text-xl font-medium">SparshNinaad</span>
+                <div className="h-20 w-40">
+                  <Image
+                    src="/logo7.png"
+                    alt="Education initiative"
+                    width={60}
+                    height={20}
+                    className="rounded-lg w-full h-full"
+                  />
+                </div>
               </div>
-              <p className="text-sm text-[#fff]">
-                Where Music Meets Meaning. A public charitable trust dedicated to classical music and social causes.
+              <p className="text-lg text-[#fff]">
+                Where Music Meets Meaning.
+                <br />A public charitable trust dedicated to classical music and social causes.
               </p>
             </div>
             <div>
               <h4 className="font-serif text-lg font-medium mb-4">Quick Links</h4>
               <ul className="space-y-2">
                 <li>
-                  <Link href="#about" className="text-sm text-[#fff] hover:text-white transition-colors">
+                  <Link href="#about" className=" text-[#fff] hover:text-white transition-colors">
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link href="#social" className="text-sm text-[#fff] hover:text-white transition-colors">
+                  <Link href="#upcoming" className=" text-[#fff] hover:text-white transition-colors">
                     Jugalbandi 2025
                   </Link>
                 </li>
                 <li>
-                  <Link href="#offerings" className="text-sm text-[#fff] hover:text-white transition-colors">
+                  <Link href="#upcoming" className=" text-[#fff] hover:text-white transition-colors">
                     Upcoming Events
                   </Link>
                 </li>
                 <li>
-                  <Link href="#vision" className="text-sm text-[#fff] hover:text-white transition-colors">
+                  <Link href="#mission" className=" text-[#fff] hover:text-white transition-colors">
                     Vision & Mission
                   </Link>
                 </li>
@@ -452,22 +462,22 @@ export default function Home() {
               <h4 className="font-serif text-lg font-medium mb-4">Socials</h4>
               <ul className="space-y-2">
                 <li>
-                  <Link href="#" className="text-sm text-[#fff] hover:text-white transition-colors">
+                  <Link href="#" className=" text-[#fff] hover:text-white transition-colors">
                     Instagram
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-sm text-[#fff] hover:text-white transition-colors">
+                  <Link href="#" className=" text-[#fff] hover:text-white transition-colors">
                     Facebook
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-sm text-[#fff] hover:text-white transition-colors">
+                  <Link href="#" className=" text-[#fff] hover:text-white transition-colors">
                     Youtube
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-sm text-[#fff] hover:text-white transition-colors">
+                  <Link href="#" className=" text-[#fff] hover:text-white transition-colors">
                     Whatsapp
                   </Link>
                 </li>

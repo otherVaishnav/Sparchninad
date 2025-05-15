@@ -15,7 +15,8 @@ body {
 @layer base {
   :root {
     --brandOne: #773a31;
-    --brandTwo: #ffe6ab;
+    /* --brandTwo: #ffe6ab; */
+    --brandTwo: #f7f0d3;
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;
