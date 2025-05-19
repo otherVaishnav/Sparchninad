@@ -33,7 +33,7 @@ export default function Home() {
                 className="rounded-lg w-full h-full"
               />
             </div>
-            <sup>TM</sup>
+            {/* <sup>TM</sup> */}
             {/* <span className="font-serif text-xl font-medium">SparshNinaad</span> */}
           </div>
           <nav className="hidden md:flex space-x-8">
