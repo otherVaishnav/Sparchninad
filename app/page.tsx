@@ -1,24 +1,39 @@
+"use client"
 import Image from "next/image"
 import Link from "next/link"
 import { Music, Heart, Calendar, Users, MapPin, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { useNavigate } from 'react-router-dom';
 
 export default function Home() {
+  // const navigate = useNavigate();
   return (
     <div className="min-h-screen bg-[#f8f5f0]">
       {/* Header */}
       <header className="border-b border-[#e0d6c8] bg-[var(--brandOne)] text-white fixed z-10 w-full top-0 ">
         <div className="container mx-auto px-4 py-2 flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <div className="h-20 w-40">
+          <div className="flex items-center space-x-2 cursor-pointer"
+            onClick={() => window.location.href = '/'}
+          >
+            <div className="h-20 w-10">
               <Image
-                src="/logo6.png"
+                src="/logo18.png"
                 alt="Education initiative"
                 width={60}
                 height={20}
                 className="rounded-lg w-full h-full"
               />
             </div>
+            <div className="h-10 w-40">
+              <Image
+                src="/logo24.png"
+                alt="Education initiative"
+                width={60}
+                height={20}
+                className="rounded-lg w-full h-full"
+              />
+            </div>
+            <sup>TM</sup>
             {/* <span className="font-serif text-xl font-medium">SparshNinaad</span> */}
           </div>
           <nav className="hidden md:flex space-x-8">
@@ -26,7 +41,7 @@ export default function Home() {
               About
             </Link>
             <Link href="#upcoming" className="text-lg font-medium hover:bg-[var(--brandTwo)] hover:text-black p-2 rounded-lg transition-colors">
-              Jugalbandi 2025
+              Upcoming Events
             </Link>
             <Link href="#vision" className="text-lg font-medium hover:bg-[var(--brandTwo)] hover:text-black p-2 rounded-lg transition-colors">
               Our Vision
@@ -38,7 +53,7 @@ export default function Home() {
               Contact
             </Link>
           </nav>
-          <Button className=" hover:bg-[#8b0000] hover:text-white bg-[var(--brandTwo)] text-lg text-black">
+          <Button variant={'outline'} className=" hover:bg-[#8b0000] hover:border-white border-solid hover:text-white bg-[var(--brandTwo)] text-lg text-black">
             Jugalbandi 2025
           </Button>
         </div>
@@ -57,11 +72,16 @@ export default function Home() {
         {/* add z-10 if need to add a background image */}
         <div className="container mx-auto px-4 relative pt-20">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="font-serif text-4xl md:text-6xl font-bold text-[#1a1a1a] mb-6">Soul of Music. <br /> Echoes of Culture. </h1>
+            <h1 className="font-serif text-4xl md:text-6xl font-bold text-[#1a1a1a] mb-6">
+              Soul of Music. <br />
+              Echoes of Culture. <br />
+              Community Service.
+            </h1>
             <p className="text-lg md:text-xl text-[#4a4a4a] mb-8 leading-relaxed">
-              At SparshNinaad, we harness the transformative power of Indian classical music to inspire, uplift, and connect. As a public charitable trust,
-              we curate soulful performances—from legendary maestros to emerging talents—while supporting meaningful social causes.
-              Through music, we celebrate tradition, nurture talent, and drive positive change in the community.
+              At SparshNinaad, we harness the transformative power of Indian music and dance to inspire, uplift, and connect.
+              As a charitable trust, we curate soulful performances, conduct workshops and master classes featuring legendary maestros and emerging talents.
+              Through music - folk, classical and contemporary -
+              we celebrate our rich heritage, nurture talent and uphold social causes to bring about positive changes in the community.
             </p>
             {/* <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button className="bg-[#8b0000] hover:bg-[#6b0000] text-white">Upcoming Concerts</Button>
@@ -77,7 +97,7 @@ export default function Home() {
       <section id="upcoming" className="py-16 bg-[var(--brandOne)] text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="font-serif text-3xl font-bold mb-4">Upcoming Events</h2>
+            <h2 className="font-serif text-5xl font-bold mb-4">Upcoming Events</h2>
             <div className="w-20 h-1 bg-[#fff] mx-auto mb-6"></div>
             <p className="text-[#f3f3f3] leading-relaxed">
               Join us for our upcoming concerts and experience the magic of classical music.
@@ -125,11 +145,11 @@ export default function Home() {
       <section id="mission" className="py-16 bg-[var(--brandTwo)]">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="font-serif text-3xl font-bold text-[#1a1a1a] mb-4">
+            <h2 className="font-serif text-5xl font-bold text-[#1a1a1a] mb-4">
               Celebrating the Rich Heritage of Classical Music
             </h2>
             <div className="w-20 h-1 bg-[var(--brandOne)] mx-auto mb-6"></div>
-            <p className="text-[#4a4a4a] leading-relaxed">
+            <p className="text-[#4a4a4a] leading-relaxed text-lg">
               We celebrate the rich heritage of classical music through events that range from intimate recitals to
               grand symphonic productions, creating lasting cultural impact.
             </p>
@@ -189,13 +209,15 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="font-serif text-3xl font-bold text-[#fff] mb-4">Our Vision</h2>
+              <h2 className="font-serif text-5xl font-bold text-[#fff] mb-4">Our Vision</h2>
               <div className="w-20 h-1 bg-[#fff] mb-6"></div>
-              <p className="text-[#fff] leading-relaxed mb-6">
-                To connect passionate audiences with the soul-stirring power of classical music, while offering artists
-                a platform to express and grow. We aim to inspire, educate, and leave a lasting cultural impact.
+              <p className="text-[#fff] leading-relaxed mb-6 text-lg">
+                At SparshNinaad, we harness the transformative power of Indian music and dance to inspire, uplift, and connect.
+                As a charitable trust, we curate soulful performances, conduct workshops and master classes featuring legendary maestros and emerging talents.
+                Through music - folk, classical and contemporary -
+                we celebrate our rich heritage, nurture talent and uphold social causes to bring about positive changes in the community.
               </p>
-              <Button className="bg-[var(--brandTwo)] hover:bg-[#6b0000] hover:text-white text-black">Learn More About Our Mission</Button>
+              <Button variant={'outline'} className="bg-[var(--brandTwo)] hover:border-white hover:bg-[#6b0000] hover:text-white text-black">Learn More About Our Mission</Button>
             </div>
             <div>
               <Image
@@ -270,7 +292,7 @@ export default function Home() {
       <section id="gallery" className="py-16 bg-[var(--brandTwo)]">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="font-serif text-3xl font-bold text-[#1a1a1a] mb-4">Gallery</h2>
+            <h2 className="font-serif text-5xl font-bold text-[#1a1a1a] mb-4">Gallery</h2>
             <div className="w-20 h-1 bg-[#8b0000] mx-auto mb-6"></div>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -384,13 +406,13 @@ export default function Home() {
             <div className="bg-[var(--brandTwo)] p-8 rounded-lg shadow-sm border border-[#e0d6c8] mb-8">
               <h3 className="font-serif text-xl font-medium mb-4 text-black">Contact Information</h3>
               <div className="space-y-4">
-                <div className="flex items-start space-x-4">
+                {/* <div className="flex items-start space-x-4">
                   <MapPin className="h-5 w-5 text-[#8b0000] mt-0.5" />
                   <div>
                     <h4 className="font-medium text-black">Address</h4>
                     <p className="text-[#4a4a4a]">123 Music Avenue, Cultural District, City, Country</p>
                   </div>
-                </div>
+                </div> */}
                 <div className="flex items-start space-x-4">
                   <Mail className="h-5 w-5 text-[#8b0000] mt-0.5" />
                   <div>
@@ -415,22 +437,41 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-[var(--brandOne)] text-white py-12">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <div className="h-20 w-40">
-                  <Image
-                    src="/logo7.png"
-                    alt="Education initiative"
-                    width={60}
-                    height={20}
-                    className="rounded-lg w-full h-full"
-                  />
+                <div className="flex items-center space-x-2 cursor-pointer"
+                  onClick={() => window.location.href = '/'}
+                >
+                  <div className="h-20 w-10">
+                    <Image
+                      src="/logo18.png"
+                      alt="Education initiative"
+                      width={60}
+                      height={20}
+                      className="rounded-lg w-full h-full"
+                    />
+                  </div>
+                  <div className="h-10 w-40">
+                    <Image
+                      src="/logo24.png"
+                      alt="Education initiative"
+                      width={60}
+                      height={20}
+                      className="rounded-lg w-full h-full"
+                    />
+                  </div>
+                  <sup className="italic">TM</sup>
+                  {/* <span className="font-serif text-xl font-medium">SparshNinaad</span> */}
                 </div>
               </div>
               <p className="text-lg text-[#fff]">
-                Where Music Meets Meaning.
-                <br />A public charitable trust dedicated to classical music and social causes.
+                <span className="font-bold italic text-xl">
+                  Soul of Music. <br />
+                  Echoes of Culture. <br />
+                  Community Service. <br />
+                </span>
+                A public charitable trust dedicated to classical music and social causes.
               </p>
             </div>
             <div>
@@ -447,8 +488,8 @@ export default function Home() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#upcoming" className=" text-[#fff] hover:text-white transition-colors">
-                    Upcoming Events
+                  <Link href="#gallery" className=" text-[#fff] hover:text-white transition-colors">
+                    Gallery
                   </Link>
                 </li>
                 <li>
@@ -471,7 +512,7 @@ export default function Home() {
                     Facebook
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link href="#" className=" text-[#fff] hover:text-white transition-colors">
                     Youtube
                   </Link>
@@ -480,7 +521,7 @@ export default function Home() {
                   <Link href="#" className=" text-[#fff] hover:text-white transition-colors">
                     Whatsapp
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
             {/* <div>
@@ -498,9 +539,9 @@ export default function Home() {
               </div>
             </div> */}
           </div>
-          <div className="border-t border-[#333] mt-8 pt-8 text-center">
+          <div className="border-t border-[#fff] mt-8 pt-8 text-center">
             <p className="text-sm text-[#fff]">
-              &copy; {new Date().getFullYear()} SparshNinaad Foundation Public Charitable Trust. All rights reserved.
+              &copy; {new Date().getFullYear()} SparshNinaad Foundation A Public Charitable Trust. All rights reserved.
             </p>
           </div>
         </div>
