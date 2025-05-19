@@ -17,7 +17,7 @@ export default function Home() {
           >
             <div className="h-20 w-10">
               <Image
-                src="/logo18.png"
+                src="/Logo18.png"
                 alt="Education initiative"
                 width={60}
                 height={20}
@@ -26,7 +26,7 @@ export default function Home() {
             </div>
             <div className="h-10 w-40">
               <Image
-                src="/logo24.png"
+                src="/Logo24.png"
                 alt="Education initiative"
                 width={60}
                 height={20}
@@ -445,7 +445,7 @@ export default function Home() {
                 >
                   <div className="h-20 w-10">
                     <Image
-                      src="/logo18.png"
+                      src="/Logo18.png"
                       alt="Education initiative"
                       width={60}
                       height={20}
@@ -454,14 +454,14 @@ export default function Home() {
                   </div>
                   <div className="h-10 w-40">
                     <Image
-                      src="/logo24.png"
+                      src="/Logo24.png"
                       alt="Education initiative"
                       width={60}
                       height={20}
                       className="rounded-lg w-full h-full"
                     />
                   </div>
-                  <sup className="italic">TM</sup>
+                  {/* <sup className="italic">TM</sup> */}
                   {/* <span className="font-serif text-xl font-medium">SparshNinaad</span> */}
                 </div>
               </div>
