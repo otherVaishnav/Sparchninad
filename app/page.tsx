@@ -33,7 +33,7 @@ export default function Home() {
                 className="rounded-lg w-full h-full"
               />
             </div>
-            {/* <sup>TM</sup> */}
+            <sup className="italic text-[4px]">TM</sup>
             {/* <span className="font-serif text-xl font-medium">SparshNinaad</span> */}
           </div>
           <nav className="hidden md:flex space-x-8">
@@ -111,24 +111,30 @@ export default function Home() {
               </div>
               <h3 className="font-serif text-xl font-medium mb-2 text-black">Jugalbandi</h3>
               <Image
-                src="/u1.jpg"
+                src="/banner.jpg"
                 alt="Education initiative"
                 width={400}
                 height={300}
                 className="rounded-lg mb-4"
               />
               <p className="text-[#4a4a4a] mb-4">
+                Rabindrasangeet meets Ragas & Bandishes <br />
                 An evening of enchanting classical music featuring renowned artists.
               </p>
               <div className="flex items-center text-sm text-[#4a4a4a] mb-2">
                 <Calendar className="h-4 w-4 mr-2" />
-                <span>June 15, 2025 | 7:00 PM</span>
+                <span>SUNDAY JULY 20, 2025 6PM ONWARDS</span>
               </div>
               <div className="flex items-center text-sm text-[#4a4a4a] mb-4">
                 <MapPin className="h-4 w-4 mr-2" />
-                <span>Grand Concert Hall, City Center</span>
+                <span>AMBEDKAR BHAVAN,
+                  VASANTH NAGAR
+                  BANGALORE
+                </span>
               </div>
-              <Button className="w-full bg-[var(--brandOne)] hover:bg-[#6b0000] text-white">Book Tickets</Button>
+              <a href="tel:9740708708">
+                <Button className="w-full bg-[var(--brandOne)] hover:bg-[#6b0000] text-white">Book Tickets</Button>
+              </a>
             </div>
             <div></div>
           </div>
@@ -304,9 +310,9 @@ export default function Home() {
                 height={300}
                 className="rounded-lg mb-4"
               />
-              <h3 className="font-serif text-xl font-medium mb-2 text-black">Image title 1</h3>
+              <h3 className="font-serif text-xl font-medium mb-2 text-black">Pt Pratyush Banerjee</h3>
               <p className="text-[#4a4a4a]">
-                desc for the image one
+                @ Soul of Music
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm border border-[#e0d6c8] hover:shadow-xl">
@@ -317,9 +323,9 @@ export default function Home() {
                 height={300}
                 className="rounded-lg mb-4"
               />
-              <h3 className="font-serif text-xl font-medium mb-2 text-black">Image title 2</h3>
+              <h3 className="font-serif text-xl font-medium mb-2 text-black">Pt Tanmoy Bose</h3>
               <p className="text-[#4a4a4a]">
-                desc for the image two
+                @ Soul of Music
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm border border-[#e0d6c8] hover:shadow-xl">
@@ -330,9 +336,9 @@ export default function Home() {
                 height={300}
                 className="rounded-lg mb-4"
               />
-              <h3 className="font-serif text-xl font-medium mb-2 text-black">Image title 3</h3>
+              <h3 className="font-serif text-xl font-medium mb-2 text-black">Junior artist Shreejita with senior musicians</h3>
               <p className="text-[#4a4a4a]">
-                desc for the image three
+                @ Soul of Music
               </p>
             </div>
           </div>
@@ -461,7 +467,7 @@ export default function Home() {
                       className="rounded-lg w-full h-full"
                     />
                   </div>
-                  {/* <sup className="italic">TM</sup> */}
+                  <sup className="italic text-[4px]">TM</sup>
                   {/* <span className="font-serif text-xl font-medium">SparshNinaad</span> */}
                 </div>
               </div>
