@@ -53,11 +53,11 @@ export default function Home() {
               Contact
             </Link>
           </nav>
-	  <a href="https://in.bookmyshow.com/events/sparshninaad-jugalbandi-concert/ET00447223">
-          <Button variant={'outline'} className=" hover:bg-[#8b0000] hover:border-white border-solid hover:text-white bg-[var(--brandTwo)] text-lg text-black">
-            Jugalbandi 2025
-          </Button>
-		  </a>
+          <a href="https://in.bookmyshow.com/events/sparshninaad-jugalbandi-concert/ET00447223" target="_blank" rel="noopener noreferrer">
+            <Button variant={'outline'} className=" hover:bg-[#8b0000] hover:border-white border-solid hover:text-white bg-[var(--brandTwo)] text-lg text-black">
+              Jugalbandi 2025
+            </Button>
+          </a>
         </div>
       </header>
 
@@ -134,7 +134,7 @@ export default function Home() {
                   BANGALORE
                 </span>
               </div>
-              <a href="https://bookmyshow.com/events/sparshninaad-jugalbandi-concert/ET00447223" target="_blank">
+              <a href="https://bookmyshow.com/events/sparshninaad-jugalbandi-concert/ET00447223" target="_blank" rel="noopener noreferrer">
                 <Button className="w-full bg-[var(--brandOne)] hover:bg-[#6b0000] text-white">Book Tickets</Button>
               </a>
             </div>
