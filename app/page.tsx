@@ -510,12 +510,12 @@ export default function Home() {
               <h4 className="font-serif text-lg font-medium mb-4">Socials</h4>
               <ul className="space-y-2">
                 <li>
-                  <Link href="#" className=" text-[#fff] hover:text-white transition-colors">
+                  <Link href="https://www.instagram.com/sparsh.ninaad?igsh=MWszeTRtenljamwweQ%3D%3D&utm_source=qr" className=" text-[#fff] hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
                     Instagram
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className=" text-[#fff] hover:text-white transition-colors">
+                  <Link href="https://www.facebook.com/profile.php?id=61576730376290&mibextid=wwXIfr&rdid=UYuchZOiFzt10FfJ&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16SwbCKEGR%2F%3Fmibextid%3DwwXIfr#" className=" text-[#fff] hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
                     Facebook
                   </Link>
                 </li>
