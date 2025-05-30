@@ -134,7 +134,7 @@ export default function Home() {
                   BANGALORE
                 </span>
               </div>
-              <a href="https://in.bookmyshow.com/events/sparshninaad-jugalbandi-concert/ET00447223">
+              <a href="https://bookmyshow.com/events/sparshninaad-jugalbandi-concert/ET00447223" target="_blank">
                 <Button className="w-full bg-[var(--brandOne)] hover:bg-[#6b0000] text-white">Book Tickets</Button>
               </a>
             </div>
