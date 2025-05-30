@@ -120,8 +120,7 @@ export default function Home() {
                 className="rounded-lg mb-4"
               />
               <p className="text-[#4a4a4a] mb-4">
-                Rabindrasangeet meets Ragas & Bandishes <br />
-                An evening of enchanting classical music featuring renowned artists.
+                Jugalbandi 2025 brings together Pt. Pratyush Banerjee, Jayati Chakraborty, Sweekruth B.P., and Kirti Ramgopal for an enchanting evening of Indian classical music and dance.
               </p>
               <div className="flex items-center text-sm text-[#4a4a4a] mb-2">
                 <Calendar className="h-4 w-4 mr-2" />
