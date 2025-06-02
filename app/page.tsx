@@ -424,7 +424,7 @@ export default function Home() {
                   <Mail className="h-5 w-5 text-[#8b0000] mt-0.5" />
                   <div>
                     <h4 className="font-medium text-black">Email</h4>
-                    <p className="text-[#4a4a4a]">contact@sparshninaad.org</p>
+                    <p className="text-[#4a4a4a]">info@sparshninaad.org</p>
                   </div>
                 </div>
               </div>
@@ -510,7 +510,7 @@ export default function Home() {
               <h4 className="font-serif text-lg font-medium mb-4">Socials</h4>
               <ul className="space-y-2">
                 <li>
-                  <Link href="https://www.instagram.com/sparsh.ninaad?igsh=MWszeTRtenljamwweQ%3D%3D&utm_source=qr" className=" text-[#fff] hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://www.instagram.com/sparshninaad.foundation/" className=" text-[#fff] hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
                     Instagram
                   </Link>
                 </li>
