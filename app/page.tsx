@@ -339,7 +339,9 @@ export default function Home() {
                 height={300}
                 className="rounded-lg mb-4"
               />
-              <h3 className="font-serif text-xl font-medium mb-2 text-black">Junior artist Shreejita with senior musicians</h3>
+              <h3 className="font-serif text-xl font-medium mb-2 text-black">
+                Pt. Prattyush Banerjee and Jayati Chakraborty at Jugalbandi 2025 concert.
+                </h3>
               <p className="text-[#4a4a4a]">
                 @ Soul of Music
               </p>
