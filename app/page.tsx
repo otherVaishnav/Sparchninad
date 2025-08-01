@@ -52,12 +52,7 @@ export default function Home() {
             <Link href="#contact" className="text-lg font-medium hover:bg-[var(--brandTwo)] hover:text-black p-2 rounded-lg transition-colors">
               Contact
             </Link>
-          </nav>
-          <a href="https://in.bookmyshow.com/events/sparshninaad-jugalbandi-concert/ET00447223" target="_blank" rel="noopener noreferrer">
-            <Button variant={'outline'} className=" hover:bg-[#8b0000] hover:border-white border-solid hover:text-white bg-[var(--brandTwo)] text-lg text-black">
-              Jugalbandi 2025
-            </Button>
-          </a>
+          </nav>          
         </div>
       </header>
 
@@ -228,7 +223,7 @@ export default function Home() {
             </div>
             <div>
               <Image
-                src="/g4.jpg"
+                src="/new_4.jpg"
                 alt="Classical music vision"
                 width={800}
                 height={600}
@@ -301,8 +296,103 @@ export default function Home() {
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="font-serif text-5xl font-bold text-[#1a1a1a] mb-4">Gallery</h2>
             <div className="w-20 h-1 bg-[#8b0000] mx-auto mb-6"></div>
+            <h5 className="font-serif text-3xl font-bold text-[#1a1a1a] mb-4">Jugalbandi Concert 2025</h5>
+            {/* <div className="w-20 h-1 bg-[#8b0000] mx-auto mb-6"></div> */}
           </div>
           <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-[#e0d6c8] hover:shadow-xl">
+              <Image
+                src="/new_3.jpg"
+                alt="Music education"
+                width={400}
+                height={300}
+                className="rounded-lg mb-4"
+              />
+              <h3 className="font-serif text-xl font-medium mb-2 text-black">
+                The auspicious lamp lighting was gracefully performed by Shubha Dhananjay
+                </h3>
+              <p className="text-[#4a4a4a]">
+                @ Soul of Music
+              </p>
+            </div>            
+            {/*  */}
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-[#e0d6c8] hover:shadow-xl">
+              <Image
+                src="/new_7.jpg"
+                alt="Music education"
+                width={400}
+                height={300}
+                className="rounded-lg mb-4"
+              />
+              <h3 className="font-serif text-xl font-medium mb-2 text-black">
+                Shreejita performing Ganesh Vandana
+              </h3>
+              <p className="text-[#4a4a4a]">
+                @ Soul of Music
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-[#e0d6c8] hover:shadow-xl">
+              <Image
+                src="/new_6.jpg"
+                alt="Music education"
+                width={400}
+                height={300}
+                className="rounded-lg mb-4"
+              />
+              <h3 className="font-serif text-xl font-medium mb-2 text-black">Junior artist Shreejita with senior musicians</h3>
+              <p className="text-[#4a4a4a]">
+                @ Soul of Music
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-[#e0d6c8] hover:shadow-xl">
+              <Image
+                src="/new_1.jpg"
+                alt="Music education"
+                width={400}
+                height={300}
+                className="rounded-lg mb-4"
+              />
+              <h3 className="font-serif text-xl font-medium mb-2 text-black">
+                Gujalbandi 2025  
+              </h3>
+              <p className="text-[#4a4a4a]">
+                @ Soul of Music
+              </p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-[#e0d6c8] hover:shadow-xl">
+              <Image
+                src="/new_5.jpg"
+                alt="Music education"
+                width={400}
+                height={300}
+                className="rounded-lg mb-4"
+              />
+              <h3 className="font-serif text-xl font-medium mb-2 text-black">
+                Sweekruth BP & Kirti Ramgopal Jugalbandi (Kathak / Bharatnatyam)
+                </h3>
+              <p className="text-[#4a4a4a]">
+                Jugalbandi Concert 2025
+              </p>
+            </div>
+            
+
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-[#e0d6c8] hover:shadow-xl">
+              <Image
+                src="/new_2.jpg"
+                alt="Music education"
+                width={400}
+                height={300}
+                className="rounded-lg mb-4"
+              />
+              <h3 className="font-serif text-xl font-medium mb-2 text-black">
+                Jugalbandi Concert 2025
+                </h3>
+              <p className="text-[#4a4a4a]">
+                Jugalbandi Concert 2025
+              </p>
+            </div>            
+            {/*  */}
             <div className="bg-[#ffffff] p-6 rounded-lg shadow-sm border border-[#e0d6c8] hover:shadow-xl">
               <Image
                 src="/g2.jpg"
@@ -341,7 +431,7 @@ export default function Home() {
               <p className="text-[#4a4a4a]">
                 @ Soul of Music
               </p>
-            </div>
+            </div>            
           </div>
         </div>
       </section>
